@@ -1,0 +1,10 @@
+com\kgisl\entity\Team.class
+com\kgisl\repository\TeamRepository.class
+com\kgisl\config\SwaggerConfig.class
+com\kgisl\config\WebMvcConfig.class
+com\kgisl\config\HibernateConfig.class
+com\kgisl\controller\TeamController.class
+com\kgisl\service\TeamServiceImp.class
+com\kgisl\service\TeamService.class
+com\kgisl\config\AspectLog.class
+com\kgisl\config\ServletIntializer.class
