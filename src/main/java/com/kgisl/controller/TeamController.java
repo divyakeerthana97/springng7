@@ -31,7 +31,9 @@ import org.springframework.http.HttpHeaders;
 /**
  * TeamController
  */
-@CrossOrigin(origins = "*", maxAge = 3600)
+// @CrossOrigin(origins = "*", maxAge = 3600)
+@CrossOrigin(origins = "*")
+// @CrossOrigin(origins = "http://localhost:4200/")
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 @RestController
 @RequestMapping("/api/teams")

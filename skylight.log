@@ -1,63 +1,567 @@
-DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  getTeams
-WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  []
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@5a78e459, com.kgisl.entity.Team@1d3c4efc, com.kgisl.entity.Team@75bb7855, com.kgisl.entity.Team@2e874514]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-9 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-9 com.kgisl.config.AspectLog - Argumentsttt :  []
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@66ae8ac5, com.kgisl.entity.Project@5db7095c, com.kgisl.entity.Project@7d573367, com.kgisl.entity.Project@79233c43, com.kgisl.entity.Project@6b496900, com.kgisl.entity.Project@e5160dc, com.kgisl.entity.Project@4ad9a67a, com.kgisl.entity.Project@2a784a46, com.kgisl.entity.Project@ad92760, com.kgisl.entity.Project@f0be167, com.kgisl.entity.Project@8667c8a, com.kgisl.entity.Project@60a43dba, com.kgisl.entity.Project@2305f4e9]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@11afb4c4, com.kgisl.entity.Team@5af55ae8, com.kgisl.entity.Team@66379143, com.kgisl.entity.Team@74d58cd1, com.kgisl.entity.Team@18300f1b, com.kgisl.entity.Team@686234ef, com.kgisl.entity.Team@32050d29]
 INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
-DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  createProject
+WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  [com.kgisl.entity.Project@25f89582]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpcreateProject
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@73d35f6d
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  getProjects
 WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  []
 INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@445ff6e9, com.kgisl.entity.Team@2eedabf4, com.kgisl.entity.Team@579bc4dc, com.kgisl.entity.Team@60ad4411]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@7eafd87, com.kgisl.entity.Project@9a34ab6, com.kgisl.entity.Project@d2e9464, com.kgisl.entity.Project@6aa4a2eb, com.kgisl.entity.Project@3af27cfd, com.kgisl.entity.Project@299767ef, com.kgisl.entity.Project@50e35b0d, com.kgisl.entity.Project@1f9f0800, com.kgisl.entity.Project@36a38a9a, com.kgisl.entity.Project@24993bbe, com.kgisl.entity.Project@6e682713, com.kgisl.entity.Project@950fdd6, com.kgisl.entity.Project@238d413c, com.kgisl.entity.Project@4ea4da38]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  [16]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@4ebb9076
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  [16, com.kgisl.entity.Project@23d2b851]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@2bae488c
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@69ea96d9, com.kgisl.entity.Project@a236f12, com.kgisl.entity.Project@610ac854, com.kgisl.entity.Project@282c063c, com.kgisl.entity.Project@154d01be, com.kgisl.entity.Project@407a7fa, com.kgisl.entity.Project@33788746, com.kgisl.entity.Project@7b2d7af3, com.kgisl.entity.Project@610c4d9, com.kgisl.entity.Project@3f118b96, com.kgisl.entity.Project@48a47985, com.kgisl.entity.Project@584e7880, com.kgisl.entity.Project@58f8595c, com.kgisl.entity.Project@6b0624ee]
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-9 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-9 com.kgisl.config.AspectLog - Argumentsttt :  [16]
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@5f0ca6c7
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  [16, com.kgisl.entity.Project@32862887]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@7b7d45d6
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@7977bf30, com.kgisl.entity.Project@39af6083, com.kgisl.entity.Project@6d1bf435, com.kgisl.entity.Project@26d27491, com.kgisl.entity.Project@6298d144, com.kgisl.entity.Project@20710eec, com.kgisl.entity.Project@1279ec8b, com.kgisl.entity.Project@273a74a9, com.kgisl.entity.Project@38c83fb, com.kgisl.entity.Project@2b22eb08, com.kgisl.entity.Project@76625753, com.kgisl.entity.Project@289ea0a, com.kgisl.entity.Project@657d32fb, com.kgisl.entity.Project@59bbfff7]
 INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
-DEBUG http-bio-9090-exec-1 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
-INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-1 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  []
 WARN http-bio-9090-exec-1 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
 INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
-INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
-INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@fadccb5, com.kgisl.entity.Team@2237abd2, com.kgisl.entity.Team@31303461, com.kgisl.entity.Team@3cf27516]
-INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
-DEBUG http-bio-9090-exec-3 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
-INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - Entering in Method :  getTeams
-WARN http-bio-9090-exec-3 com.kgisl.config.AspectLog - Argumentsttt :  []
-INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
-INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
-INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@7b8e034, com.kgisl.entity.Team@37a6ad6d, com.kgisl.entity.Team@23c572cc, com.kgisl.entity.Team@1c20fcbf]
-DEBUG localhost-startStop-1 org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@5828291b, com.kgisl.entity.Team@2f2a13f7, com.kgisl.entity.Team@1ad43bdd, com.kgisl.entity.Team@5c22ae26, com.kgisl.entity.Team@45db2448, com.kgisl.entity.Team@3a1132af, com.kgisl.entity.Team@120ece3]
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@3cf3ef0b, com.kgisl.entity.Project@b6f5a9d, com.kgisl.entity.Project@54ee95e6, com.kgisl.entity.Project@41d4e766, com.kgisl.entity.Project@627cc3e0, com.kgisl.entity.Project@13b6d680, com.kgisl.entity.Project@33d720b5, com.kgisl.entity.Project@555e0e7e, com.kgisl.entity.Project@5139b4f6, com.kgisl.entity.Project@741e7a87, com.kgisl.entity.Project@7ec63e39, com.kgisl.entity.Project@5bcef261, com.kgisl.entity.Project@474c73ea, com.kgisl.entity.Project@4081e3c6]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  []
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@4fe51ef7, com.kgisl.entity.Team@1dda0e5c, com.kgisl.entity.Team@4e83d880, com.kgisl.entity.Team@4f701629, com.kgisl.entity.Team@2805ab96, com.kgisl.entity.Team@6560e824, com.kgisl.entity.Team@35776bd0]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@dac5cac, com.kgisl.entity.Project@137e6031, com.kgisl.entity.Project@263121a2, com.kgisl.entity.Project@2afdf963, com.kgisl.entity.Project@455b99ac, com.kgisl.entity.Project@254406de, com.kgisl.entity.Project@a570fe5, com.kgisl.entity.Project@4f24d92d, com.kgisl.entity.Project@562bbf9c, com.kgisl.entity.Project@535c2171, com.kgisl.entity.Project@61c634d8, com.kgisl.entity.Project@842647c, com.kgisl.entity.Project@31eedb7, com.kgisl.entity.Project@317b030c]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  []
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@39bd472d, com.kgisl.entity.Team@5381db48, com.kgisl.entity.Team@36ad6d7, com.kgisl.entity.Team@1f22d6f5, com.kgisl.entity.Team@4c757e13, com.kgisl.entity.Team@1173a74e, com.kgisl.entity.Team@44fa07d9]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@146d4556, com.kgisl.entity.Project@440289e5, com.kgisl.entity.Project@2580099, com.kgisl.entity.Project@3a6b5fee, com.kgisl.entity.Project@44d2ea00, com.kgisl.entity.Project@14cf1ede, com.kgisl.entity.Project@56519816, com.kgisl.entity.Project@36a5291d, com.kgisl.entity.Project@65744723, com.kgisl.entity.Project@9a19cbd, com.kgisl.entity.Project@53ea34b7, com.kgisl.entity.Project@4c181216, com.kgisl.entity.Project@b9209e9, com.kgisl.entity.Project@e532852]
 INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
 DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
 INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  getTeams
 WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  []
 INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
 INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
-INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@52d45e41, com.kgisl.entity.Team@14c19c51, com.kgisl.entity.Team@5b4f5b60, com.kgisl.entity.Team@3d0862b7, com.kgisl.entity.Team@18dfa420]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@77ea4f74, com.kgisl.entity.Team@21aa267c, com.kgisl.entity.Team@586632c3, com.kgisl.entity.Team@35a49e6, com.kgisl.entity.Team@266e3716, com.kgisl.entity.Team@56077c61, com.kgisl.entity.Team@3f1eac48]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@482b5080, com.kgisl.entity.Project@4655873f, com.kgisl.entity.Project@68109945, com.kgisl.entity.Project@52efd356, com.kgisl.entity.Project@405226db, com.kgisl.entity.Project@2a543d91, com.kgisl.entity.Project@4662532f, com.kgisl.entity.Project@6a3b5dd6, com.kgisl.entity.Project@3b8edab4, com.kgisl.entity.Project@30bdd0e1, com.kgisl.entity.Project@649216f2, com.kgisl.entity.Project@5477225b, com.kgisl.entity.Project@1961091b, com.kgisl.entity.Project@4705e80e]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  [16]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@2749ed3a
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-6 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-6 com.kgisl.config.AspectLog - Argumentsttt :  []
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@9792ae9, com.kgisl.entity.Team@30746e2b, com.kgisl.entity.Team@5abd639a, com.kgisl.entity.Team@5b880ab9, com.kgisl.entity.Team@1be65d43, com.kgisl.entity.Team@8f07d22, com.kgisl.entity.Team@39e07e15]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@7414e160, com.kgisl.entity.Project@5b131670, com.kgisl.entity.Project@448fb6ee, com.kgisl.entity.Project@8125e51, com.kgisl.entity.Project@5bdeb1d2, com.kgisl.entity.Project@183d8c4f, com.kgisl.entity.Project@213c7160, com.kgisl.entity.Project@3bc643c0, com.kgisl.entity.Project@1538354b, com.kgisl.entity.Project@61938c57, com.kgisl.entity.Project@23e64674, com.kgisl.entity.Project@2a37c98b, com.kgisl.entity.Project@7ef123eb, com.kgisl.entity.Project@3fdf956]
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-6 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-6 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@2b3eed0d, com.kgisl.entity.Project@39f71851, com.kgisl.entity.Project@331d5976, com.kgisl.entity.Project@5587db03, com.kgisl.entity.Project@98d123b, com.kgisl.entity.Project@8b9a6cb, com.kgisl.entity.Project@51b68843, com.kgisl.entity.Project@3a021eb5, com.kgisl.entity.Project@5bffdf04, com.kgisl.entity.Project@1e35a54e, com.kgisl.entity.Project@7b24c25b, com.kgisl.entity.Project@51799c3c, com.kgisl.entity.Project@74db6ee8, com.kgisl.entity.Project@4777bae8]
 INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
 DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
 INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  getTeams
 WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  []
 INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
 INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
-INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@73367dd, com.kgisl.entity.Team@4cab68b6, com.kgisl.entity.Team@568762ba, com.kgisl.entity.Team@66a23156, com.kgisl.entity.Team@7a33bfd0]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@41242a91, com.kgisl.entity.Team@7652e1c1, com.kgisl.entity.Team@7a2c4ae0, com.kgisl.entity.Team@41bffaa8, com.kgisl.entity.Team@21af20ac, com.kgisl.entity.Team@401291b1, com.kgisl.entity.Team@58f1b819]
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-1 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-1 com.kgisl.config.AspectLog - Argumentsttt :  [16]
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@ec076c1
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  [15]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@26bf81f1
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@2b4482cc, com.kgisl.entity.Team@17452b4f, com.kgisl.entity.Team@12fa5bbc, com.kgisl.entity.Team@5fc3cbc7, com.kgisl.entity.Team@509e7011, com.kgisl.entity.Team@6ebf361e, com.kgisl.entity.Team@2e58a7ce]
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-3 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-3 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@54a735f2, com.kgisl.entity.Project@19ead751, com.kgisl.entity.Project@6221be72, com.kgisl.entity.Project@bdc2e1f, com.kgisl.entity.Project@66b98233, com.kgisl.entity.Project@29a681ea, com.kgisl.entity.Project@469b7882, com.kgisl.entity.Project@2cdd1a98, com.kgisl.entity.Project@6dfad2a, com.kgisl.entity.Project@1b6bc5ca, com.kgisl.entity.Project@629e14d, com.kgisl.entity.Project@42e422ca, com.kgisl.entity.Project@39296141, com.kgisl.entity.Project@7ca9b63b]
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-6 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-6 com.kgisl.config.AspectLog - Argumentsttt :  []
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@604f69ce, com.kgisl.entity.Project@1ff1c745, com.kgisl.entity.Project@48c503ff, com.kgisl.entity.Project@678cc290, com.kgisl.entity.Project@7c96d6b6, com.kgisl.entity.Project@6d4cfd8e, com.kgisl.entity.Project@df6d123, com.kgisl.entity.Project@c6f0a4f, com.kgisl.entity.Project@46864e12, com.kgisl.entity.Project@4c2c7bc1, com.kgisl.entity.Project@77e8d4ae, com.kgisl.entity.Project@3a1956e, com.kgisl.entity.Project@77a3bdd6, com.kgisl.entity.Project@58fe2290]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@7074b445, com.kgisl.entity.Team@7a40e878, com.kgisl.entity.Team@786bc25, com.kgisl.entity.Team@30737718, com.kgisl.entity.Team@65f02bcf, com.kgisl.entity.Team@180e1c21, com.kgisl.entity.Team@2a5bec91]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  createProject
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  [com.kgisl.entity.Project@8aeff2d]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpcreateProject
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@518406f8
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@5fb7d6b9, com.kgisl.entity.Project@5105bdf1, com.kgisl.entity.Project@726cbe22, com.kgisl.entity.Project@6f473e63, com.kgisl.entity.Project@ea43f2c, com.kgisl.entity.Project@72b2e13c, com.kgisl.entity.Project@6538cce6, com.kgisl.entity.Project@335a4204, com.kgisl.entity.Project@1c28461c, com.kgisl.entity.Project@79f6ffa4, com.kgisl.entity.Project@5a8a5380, com.kgisl.entity.Project@3b2170b7, com.kgisl.entity.Project@6567d969, com.kgisl.entity.Project@2ba211be, com.kgisl.entity.Project@23bc5119]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  [17]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@323e7221
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  [17, com.kgisl.entity.Project@5ba1e777]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@7c850205
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@1365dcfa, com.kgisl.entity.Project@6dc6161a, com.kgisl.entity.Project@240af7d9, com.kgisl.entity.Project@284e8691, com.kgisl.entity.Project@15f11d6e, com.kgisl.entity.Project@485abf0c, com.kgisl.entity.Project@3b1d3de1, com.kgisl.entity.Project@67bb5e1d, com.kgisl.entity.Project@7abc25e9, com.kgisl.entity.Project@6783576d, com.kgisl.entity.Project@35238c49, com.kgisl.entity.Project@8d56746, com.kgisl.entity.Project@13dd98d8, com.kgisl.entity.Project@6e188df1, com.kgisl.entity.Project@47f005bf]
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-6 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+WARN http-bio-9090-exec-6 com.kgisl.config.AspectLog - Argumentsttt :  []
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@55312fd, com.kgisl.entity.Team@a8d85a4, com.kgisl.entity.Team@366e6459, com.kgisl.entity.Team@3e964f9b, com.kgisl.entity.Team@23cf764e, com.kgisl.entity.Team@45896736, com.kgisl.entity.Team@8f72]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@4b285cb9, com.kgisl.entity.Project@729dfe2e, com.kgisl.entity.Project@6c9751c6, com.kgisl.entity.Project@4676e8ea, com.kgisl.entity.Project@4f32a909, com.kgisl.entity.Project@52c3424f, com.kgisl.entity.Project@40c20b0, com.kgisl.entity.Project@754ca963, com.kgisl.entity.Project@2fec3c22, com.kgisl.entity.Project@67f5c2aa, com.kgisl.entity.Project@2996744, com.kgisl.entity.Project@128ed1c5, com.kgisl.entity.Project@5c4df29a, com.kgisl.entity.Project@15649b2b, com.kgisl.entity.Project@5c0e7d84]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  [17]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@15c1b48c
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  [17, com.kgisl.entity.Project@50edb914]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@6e1e8a70
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@2888b55c, com.kgisl.entity.Project@37a09a20, com.kgisl.entity.Project@22e33c5c, com.kgisl.entity.Project@5808ce6f, com.kgisl.entity.Project@35c7a267, com.kgisl.entity.Project@6854f65, com.kgisl.entity.Project@3dbf9235, com.kgisl.entity.Project@235a585b, com.kgisl.entity.Project@2b8602cd, com.kgisl.entity.Project@7548ebf, com.kgisl.entity.Project@46bb8a5a, com.kgisl.entity.Project@37529a56, com.kgisl.entity.Project@2c59661b, com.kgisl.entity.Project@f5b2459, com.kgisl.entity.Project@152886b2]
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-1 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-1 com.kgisl.config.AspectLog - Argumentsttt :  [17]
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@27cb3596
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@6998a85, com.kgisl.entity.Team@24a3210c, com.kgisl.entity.Team@90e282c, com.kgisl.entity.Team@6adb5348, com.kgisl.entity.Team@205c3134, com.kgisl.entity.Team@1dcadf72, com.kgisl.entity.Team@65fddbaf]
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-5 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-5 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@4625a660, com.kgisl.entity.Project@224ccbea, com.kgisl.entity.Project@22608f05, com.kgisl.entity.Project@2c3f4893, com.kgisl.entity.Project@47c2fdd2, com.kgisl.entity.Project@3156d5b, com.kgisl.entity.Project@252bd29b, com.kgisl.entity.Project@73867d7d, com.kgisl.entity.Project@237a22b2, com.kgisl.entity.Project@badec33, com.kgisl.entity.Project@706948d7, com.kgisl.entity.Project@30c4ae32, com.kgisl.entity.Project@4259752a, com.kgisl.entity.Project@2671d526, com.kgisl.entity.Project@1ce40ecf]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  [17]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@39479050
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-9 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-9 com.kgisl.config.AspectLog - Argumentsttt :  [17, com.kgisl.entity.Project@f2ad83f]
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@52bb8d57
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-9 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-9 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@49ddd233, com.kgisl.entity.Project@6825e0b9, com.kgisl.entity.Project@4ae5eff4, com.kgisl.entity.Project@11815dd7, com.kgisl.entity.Project@36ea599e, com.kgisl.entity.Project@710d57d2, com.kgisl.entity.Project@14f29c48, com.kgisl.entity.Project@f8604e4, com.kgisl.entity.Project@6bc49a23, com.kgisl.entity.Project@70ecf34e, com.kgisl.entity.Project@70fc31c7, com.kgisl.entity.Project@4fe2ba18, com.kgisl.entity.Project@383445, com.kgisl.entity.Project@1759c18f, com.kgisl.entity.Project@6bab8aa]
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-1 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-1 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@58f64603, com.kgisl.entity.Team@5c2fbd2a, com.kgisl.entity.Team@69e13fa2, com.kgisl.entity.Team@169bf96c, com.kgisl.entity.Team@7c3773e2, com.kgisl.entity.Team@5d5047a3, com.kgisl.entity.Team@3d2c7f84]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@515dd582, com.kgisl.entity.Project@75188f22, com.kgisl.entity.Project@5a68001f, com.kgisl.entity.Project@2f4e7ab3, com.kgisl.entity.Project@10005b1d, com.kgisl.entity.Project@2150a7a0, com.kgisl.entity.Project@3b22336d, com.kgisl.entity.Project@67654d58, com.kgisl.entity.Project@75af3a1a, com.kgisl.entity.Project@5166eea8, com.kgisl.entity.Project@7bf506b2, com.kgisl.entity.Project@36378b19, com.kgisl.entity.Project@3ac4082f, com.kgisl.entity.Project@5cb1b271, com.kgisl.entity.Project@fa2efc3]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  [17]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@56ef1ecb
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-3 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-3 com.kgisl.config.AspectLog - Argumentsttt :  [17, com.kgisl.entity.Project@2483c588]
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@7a6415f5
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-3 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-3 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@56e1f1e5, com.kgisl.entity.Project@5d7254b6, com.kgisl.entity.Project@73577473, com.kgisl.entity.Project@c454165, com.kgisl.entity.Project@5572f7d1, com.kgisl.entity.Project@1aeace2d, com.kgisl.entity.Project@52d6d5ef, com.kgisl.entity.Project@74bee8b9, com.kgisl.entity.Project@36b04580, com.kgisl.entity.Project@7a677edd, com.kgisl.entity.Project@1e7aa5d3, com.kgisl.entity.Project@1d827d85, com.kgisl.entity.Project@29aaa7f0, com.kgisl.entity.Project@687ab58e, com.kgisl.entity.Project@23e5c16f]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+DEBUG http-bio-9090-exec-9 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-9 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@a81343c, com.kgisl.entity.Project@62fe687d, com.kgisl.entity.Project@3d64e4ee, com.kgisl.entity.Project@632165a4, com.kgisl.entity.Project@60029d28, com.kgisl.entity.Project@712eacd5, com.kgisl.entity.Project@6b77658a, com.kgisl.entity.Project@3133105, com.kgisl.entity.Project@778c1792, com.kgisl.entity.Project@734045b2, com.kgisl.entity.Project@234b2565, com.kgisl.entity.Project@39caa310, com.kgisl.entity.Project@2e6d133c, com.kgisl.entity.Project@5f71be96, com.kgisl.entity.Project@256bc810]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@2bde5668, com.kgisl.entity.Team@36984300, com.kgisl.entity.Team@3d614a84, com.kgisl.entity.Team@adea544, com.kgisl.entity.Team@53eadf61, com.kgisl.entity.Team@279e165f, com.kgisl.entity.Team@109c5d42]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  [17]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@655ece1e
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  deleteProjectById
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  [17]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpdeleteProjectById
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - >with null as return value.
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@33efb775, com.kgisl.entity.Project@ab52386, com.kgisl.entity.Project@717ee924, com.kgisl.entity.Project@69dda0e9, com.kgisl.entity.Project@27c7f6b8, com.kgisl.entity.Project@4cd58d5, com.kgisl.entity.Project@2fca6a1, com.kgisl.entity.Project@62294ff, com.kgisl.entity.Project@1ec8d0b5, com.kgisl.entity.Project@70ad3849, com.kgisl.entity.Project@17834153, com.kgisl.entity.Project@514aa30, com.kgisl.entity.Project@5d819f5f, com.kgisl.entity.Project@44779bd6]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  [16]
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@39f16f0a
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-6 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-6 com.kgisl.config.AspectLog - Argumentsttt :  [16, com.kgisl.entity.Project@5a7de5c3]
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@2d02b416
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-6 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-6 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@31f0f0ae, com.kgisl.entity.Project@3182512c, com.kgisl.entity.Project@b3cec1e, com.kgisl.entity.Project@7b8cd73d, com.kgisl.entity.Project@4d4f3d62, com.kgisl.entity.Project@6ee70ed6, com.kgisl.entity.Project@2d75308, com.kgisl.entity.Project@1f7f4950, com.kgisl.entity.Project@2befc3f0, com.kgisl.entity.Project@7da8e9e5, com.kgisl.entity.Project@45dfaa4b, com.kgisl.entity.Project@200f4e69, com.kgisl.entity.Project@75aaf9db, com.kgisl.entity.Project@4ff7d14a]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  [16]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@606cbac5
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+DEBUG http-bio-9090-exec-2 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-2 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@2ca1cdb7, com.kgisl.entity.Team@6d9e8fe3, com.kgisl.entity.Team@2fa27d36, com.kgisl.entity.Team@61bb8c, com.kgisl.entity.Team@228f0242, com.kgisl.entity.Team@3b777067, com.kgisl.entity.Team@700f1f2]
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-2 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@4bb2a983, com.kgisl.entity.Project@16f4ffdd, com.kgisl.entity.Project@3fb81914, com.kgisl.entity.Project@14f8a22e, com.kgisl.entity.Project@4ad8ff83, com.kgisl.entity.Project@7be3eb12, com.kgisl.entity.Project@46c2dc3, com.kgisl.entity.Project@55d406b2, com.kgisl.entity.Project@587ddf6c, com.kgisl.entity.Project@3ca2140a, com.kgisl.entity.Project@59452468, com.kgisl.entity.Project@2cd14864, com.kgisl.entity.Project@1ae1642d, com.kgisl.entity.Project@36cf213f]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+DEBUG http-bio-9090-exec-5 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+WARN http-bio-9090-exec-5 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@6c11b9fc, com.kgisl.entity.Project@10c41fd9, com.kgisl.entity.Project@3fa3fb6a, com.kgisl.entity.Project@68af45b8, com.kgisl.entity.Project@910cf08, com.kgisl.entity.Project@391a2324, com.kgisl.entity.Project@19c2f7c6, com.kgisl.entity.Project@b52e3c3, com.kgisl.entity.Project@4b5152e, com.kgisl.entity.Project@6c5e159f, com.kgisl.entity.Project@62acb315, com.kgisl.entity.Project@7efc0878, com.kgisl.entity.Project@524c7eec, com.kgisl.entity.Project@4ea27bd7]
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@53fcaf7c, com.kgisl.entity.Team@108f8ab0, com.kgisl.entity.Team@18146553, com.kgisl.entity.Team@61f077ec, com.kgisl.entity.Team@57c1b3e1, com.kgisl.entity.Team@3b7779a3, com.kgisl.entity.Team@72ad63]
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-1 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - Entering in Method :  createProject
+WARN http-bio-9090-exec-1 com.kgisl.config.AspectLog - Argumentsttt :  [com.kgisl.entity.Project@6c684054]
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpcreateProject
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@b18f3d4
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-1 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-1 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-1 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@2ea9a77b, com.kgisl.entity.Project@782936e1, com.kgisl.entity.Project@2e5ba652, com.kgisl.entity.Project@63e55ae3, com.kgisl.entity.Project@94bb9b, com.kgisl.entity.Project@31bb0b56, com.kgisl.entity.Project@42a15205, com.kgisl.entity.Project@bda2af0, com.kgisl.entity.Project@2eb70073, com.kgisl.entity.Project@47bf5f48, com.kgisl.entity.Project@fc60cc0, com.kgisl.entity.Project@55913a62, com.kgisl.entity.Project@43b31c3b, com.kgisl.entity.Project@7ecb5e1a, com.kgisl.entity.Project@41d4ed0f]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  [18]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@5e08f41a
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-9 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-9 com.kgisl.config.AspectLog - Argumentsttt :  [18, com.kgisl.entity.Project@5d30b91f]
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@7073aeb9
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-9 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-9 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-9 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@1e2a6bb3, com.kgisl.entity.Project@1990876, com.kgisl.entity.Project@4c531b7c, com.kgisl.entity.Project@55f5b2b1, com.kgisl.entity.Project@184f3c4f, com.kgisl.entity.Project@515c4d88, com.kgisl.entity.Project@5003424, com.kgisl.entity.Project@7d987e0f, com.kgisl.entity.Project@1cd498b7, com.kgisl.entity.Project@2f57b6a8, com.kgisl.entity.Project@2b720672, com.kgisl.entity.Project@15a47d15, com.kgisl.entity.Project@2d8d4e36, com.kgisl.entity.Project@3ffd5fd9, com.kgisl.entity.Project@4879fc2]
 INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
 DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  createTeam
-WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  [com.kgisl.entity.Team@2c8ea975]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  []
 INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpcreateTeam
-INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Team@72e4f5e7
-INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
-DEBUG http-bio-9090-exec-10 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
-INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - Entering in Method :  createTeam
-WARN http-bio-9090-exec-10 com.kgisl.config.AspectLog - Argumentsttt :  [com.kgisl.entity.Team@25382450]
-INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
-INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpcreateTeam
-INFO http-bio-9090-exec-10 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Team@3e3c6c6e
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@6c07e14a, com.kgisl.entity.Team@342cd4d8, com.kgisl.entity.Team@1012796f, com.kgisl.entity.Team@2b202d67, com.kgisl.entity.Team@787e84f8, com.kgisl.entity.Team@2aa6053b, com.kgisl.entity.Team@29fcc801]
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-3 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-3 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@50875722, com.kgisl.entity.Project@6508c30, com.kgisl.entity.Project@47210654, com.kgisl.entity.Project@8e7ec46, com.kgisl.entity.Project@62b3943f, com.kgisl.entity.Project@6080a555, com.kgisl.entity.Project@2fdc1cb7, com.kgisl.entity.Project@186e40d6, com.kgisl.entity.Project@66823d88, com.kgisl.entity.Project@34d8600, com.kgisl.entity.Project@4cbb0b7a, com.kgisl.entity.Project@26b99acb, com.kgisl.entity.Project@51208de9, com.kgisl.entity.Project@3eb26c4b, com.kgisl.entity.Project@2ac6503c]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-3 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+DEBUG http-bio-9090-exec-8 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+WARN http-bio-9090-exec-3 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-8 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-3 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@7f24f8f7, com.kgisl.entity.Team@21f14e78, com.kgisl.entity.Team@3dadee3f, com.kgisl.entity.Team@46cd265b, com.kgisl.entity.Team@1ef69d35, com.kgisl.entity.Team@355f921d, com.kgisl.entity.Team@67515e9f]
+INFO http-bio-9090-exec-8 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@35c6cc0c, com.kgisl.entity.Project@7eb16021, com.kgisl.entity.Project@5fbe356, com.kgisl.entity.Project@2a65d10c, com.kgisl.entity.Project@2940dee0, com.kgisl.entity.Project@5c051381, com.kgisl.entity.Project@6beaa04, com.kgisl.entity.Project@257f66e, com.kgisl.entity.Project@2d4f9f1a, com.kgisl.entity.Project@59a20829, com.kgisl.entity.Project@2abf7793, com.kgisl.entity.Project@17e6102c, com.kgisl.entity.Project@4680fa85, com.kgisl.entity.Project@faa513c, com.kgisl.entity.Project@5e78acb5]
 INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
 DEBUG http-bio-9090-exec-6 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
 INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - Entering in Method :  getTeams
 WARN http-bio-9090-exec-6 com.kgisl.config.AspectLog - Argumentsttt :  []
 INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
 INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
-INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@1b671af2, com.kgisl.entity.Team@d1fd37e, com.kgisl.entity.Team@12f153ce, com.kgisl.entity.Team@6b982e0, com.kgisl.entity.Team@25aaa84f, com.kgisl.entity.Team@565d0ba7, com.kgisl.entity.Team@4e2a4d81]
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@17452c6b, com.kgisl.entity.Team@ce2613c, com.kgisl.entity.Team@136cfa5, com.kgisl.entity.Team@2f093a13, com.kgisl.entity.Team@11916ded, com.kgisl.entity.Team@e651562, com.kgisl.entity.Team@3919a8ec]
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-5 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-5 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@50dc45d9, com.kgisl.entity.Project@66899cac, com.kgisl.entity.Project@207e6a32, com.kgisl.entity.Project@e94324f, com.kgisl.entity.Project@3cd44cc9, com.kgisl.entity.Project@1612cb03, com.kgisl.entity.Project@45ee1c09, com.kgisl.entity.Project@6a4748b1, com.kgisl.entity.Project@74ebf334, com.kgisl.entity.Project@74216479, com.kgisl.entity.Project@419a20a0, com.kgisl.entity.Project@11c8eae2, com.kgisl.entity.Project@3a91c9bc, com.kgisl.entity.Project@456c603b, com.kgisl.entity.Project@5563c716]
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-5 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.TeamServiceImp
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - Entering in Method :  getTeams
+WARN http-bio-9090-exec-5 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.TeamServiceImpgetTeams
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Team@ca0ec20, com.kgisl.entity.Team@292d88bb, com.kgisl.entity.Team@748833f1, com.kgisl.entity.Team@6385cf61, com.kgisl.entity.Team@684feedd, com.kgisl.entity.Team@2de2db3f, com.kgisl.entity.Team@184062c9]
+DEBUG http-bio-9090-exec-6 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-6 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-6 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@7e6cde46, com.kgisl.entity.Project@2ad994dd, com.kgisl.entity.Project@1e7a99b4, com.kgisl.entity.Project@a01f89a, com.kgisl.entity.Project@12078972, com.kgisl.entity.Project@749e9893, com.kgisl.entity.Project@3ee3188d, com.kgisl.entity.Project@3b23e2e3, com.kgisl.entity.Project@15c1a0ec, com.kgisl.entity.Project@151bf8c7, com.kgisl.entity.Project@339abd99, com.kgisl.entity.Project@170a75f3, com.kgisl.entity.Project@fd4613e, com.kgisl.entity.Project@45436dc3, com.kgisl.entity.Project@23d37687]
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-5 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - Entering in Method :  findByProjectId
+WARN http-bio-9090-exec-5 com.kgisl.config.AspectLog - Argumentsttt :  [18]
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpfindByProjectId
+INFO http-bio-9090-exec-5 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@62101e8d
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  [18, com.kgisl.entity.Project@49091dd0]
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@33e6df3b
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-4 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-4 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-4 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@3f2a836c, com.kgisl.entity.Project@1456870e, com.kgisl.entity.Project@7797e0cf, com.kgisl.entity.Project@76d3f04f, com.kgisl.entity.Project@1d092c1a, com.kgisl.entity.Project@3dc7a642, com.kgisl.entity.Project@751ea8ad, com.kgisl.entity.Project@1ca67fc9, com.kgisl.entity.Project@481bf9bb, com.kgisl.entity.Project@48eeb34c, com.kgisl.entity.Project@4835213c, com.kgisl.entity.Project@67c257c4, com.kgisl.entity.Project@7083aca6, com.kgisl.entity.Project@4dca1529, com.kgisl.entity.Project@2c97f16d]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  updateProject
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  [18, com.kgisl.entity.Project@66ba8c8b]
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpupdateProject
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}com.kgisl.entity.Project@2edb0cc3
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - -----------------------@Before advice called--------------------------------------
+DEBUG http-bio-9090-exec-7 com.kgisl.config.AspectLog - Class Name :  com.kgisl.service.ProjectServiceImp
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - Entering in Method :  getProjects
+WARN http-bio-9090-exec-7 com.kgisl.config.AspectLog - Argumentsttt :  []
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - ------------------- @AfterReturning advice called ---------------------------------
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog -  >Returning for class : {} ; Method : {} com.kgisl.service.ProjectServiceImpgetProjects
+INFO http-bio-9090-exec-7 com.kgisl.config.AspectLog - > with value : {}[com.kgisl.entity.Project@1b279b6d, com.kgisl.entity.Project@2e3a64fd, com.kgisl.entity.Project@738ab9a2, com.kgisl.entity.Project@1fa37155, com.kgisl.entity.Project@38f86d3f, com.kgisl.entity.Project@4598fb51, com.kgisl.entity.Project@63791de9, com.kgisl.entity.Project@67d4f10a, com.kgisl.entity.Project@1cbef95a, com.kgisl.entity.Project@1e7edbef, com.kgisl.entity.Project@35c31b9c, com.kgisl.entity.Project@755fe08f, com.kgisl.entity.Project@1e40a357, com.kgisl.entity.Project@7609b2d3, com.kgisl.entity.Project@5b3b5875]
