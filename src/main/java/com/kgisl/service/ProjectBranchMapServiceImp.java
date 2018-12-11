@@ -40,4 +40,9 @@ public class ProjectBranchMapServiceImp implements ProjectBranchMapService {
         projectBranchMapRepository.deleteById(id);
     }
 
+    public Object[] getProjectBranchMapsNativeQuery() {
+        System.out.println(projectBranchMapRepository.findAllProjectBranches());
+
+        return  projectBranchMapRepository.findAllProjectBranches();
+    }
 }

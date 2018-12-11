@@ -38,7 +38,6 @@ import org.springframework.http.HttpHeaders;
 @RestController
 @RequestMapping("/api/projectBranchMaps")
 public class ProjectBranchMapController {
-
     @Autowired
     private ProjectBranchMapService projectBranchMapService;
 
@@ -56,7 +55,11 @@ public class ProjectBranchMapController {
         System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(projectBranchMapService.getProjectBranchMaps(), HttpStatus.OK);
     }
-
+    @GetMapping("/allnativequery")
+    public @ResponseBody ResponseEntity<Object[]> allnativequery() {
+        System.out.println("GET ALL CALLED");
+        return new ResponseEntity<>(projectBranchMapService.getProjectBranchMapsNativeQuery(), HttpStatus.OK);
+    }
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ProjectBranchMap> getProjectBranchMapById(@PathVariable("id") long id) {
         System.out.println("Fetching ProjectBranchMap with id " + id);

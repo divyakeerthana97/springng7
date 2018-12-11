@@ -13,5 +13,5 @@ public interface ProjectBranchMapService {
     public ProjectBranchMap findByProjectBranchMapId(Long id);
     public ProjectBranchMap updateProjectBranchMap(Long id,ProjectBranchMap projectBranchMap);
     public void deleteProjectBranchMapById(Long id); 
-
+    public Object[] getProjectBranchMapsNativeQuery();
 }
