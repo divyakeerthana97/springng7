@@ -4,9 +4,9 @@ jdk: oraclejdk8
 
   addons:
   sonarcloud:
-    organization: baraneetharan-github
+    organization: divyakeerthana97-github
     token:
-      secure: 5440b0e65f5d7649a722d23996224976f5b68c46
+      secure: f2c90a23b2d271fc050c347f4b7f63d858b4c411
 
 before_install:
 - chmod +x mvnw
