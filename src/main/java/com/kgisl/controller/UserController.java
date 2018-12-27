@@ -40,7 +40,7 @@ public class UserController {
         userService.createUser(user);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(user.getId()).toUri());
-        return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
+        return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 
     @GetMapping("/")
@@ -52,25 +52,25 @@ public class UserController {
     public ResponseEntity<User> getUserById(@PathVariable("id") long id) {
         User user = userService.findByUserId(id);
         if (user == null) {
-            return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<User>(user, HttpStatus.OK);
+        return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
     @PutMapping(value = "/{id}", headers="Accept=application/json")
     public ResponseEntity<String> updateUser(@PathVariable("id") long id,@RequestBody User currentUser)
     {
         userService.updateUser(id,currentUser);
-        return new ResponseEntity<String>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @DeleteMapping(value="/{id}", headers ="Accept=application/json")
     public ResponseEntity<User> deleteUser(@PathVariable("id") Long id){
         User user = userService.findByUserId(id);
         if (user == null) {
-            return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         userService.deleteUserById(id);
-        return new ResponseEntity<User>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

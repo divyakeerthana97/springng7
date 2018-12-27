@@ -41,7 +41,7 @@ public class ProjectController {
         projectService.createProject(project);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(project.getProjectid()).toUri());
-        return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
+        return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 
     @GetMapping("/")
@@ -53,25 +53,25 @@ public class ProjectController {
     public ResponseEntity<Project> getProjectById(@PathVariable("id") long id) {
         Project project = projectService.findByProjectId(id);
         if (project == null) {
-            return new ResponseEntity<Project>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<Project>(project, HttpStatus.OK);
+        return new ResponseEntity<>(project, HttpStatus.OK);
     }
 
     @PutMapping(value = "/{id}", headers="Accept=application/json")
     public ResponseEntity<String> updateProject(@PathVariable("id") long id,@RequestBody Project currentProject)
     {
         projectService.updateProject(id,currentProject);
-        return new ResponseEntity<String>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @DeleteMapping(value="/{id}", headers ="Accept=application/json")
     public ResponseEntity<Project> deleteProject(@PathVariable("id") Long id){
         Project user = projectService.findByProjectId(id);
         if (user == null) {
-            return new ResponseEntity<Project>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         projectService.deleteProjectById(id);
-        return new ResponseEntity<Project>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }

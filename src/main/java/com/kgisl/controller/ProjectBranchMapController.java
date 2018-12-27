@@ -40,7 +40,7 @@ public class ProjectBranchMapController {
         projectBranchMapService.createProjectBranchMap(projectBranchMap);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(projectBranchMap.getProjectbranchid()).toUri());
-        return new ResponseEntity<Void>(headers, HttpStatus.CREATED);
+        return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 
     @GetMapping("/")
@@ -55,25 +55,25 @@ public class ProjectBranchMapController {
     public ResponseEntity<ProjectBranchMap> getProjectBranchMapById(@PathVariable("id") long id) {
         ProjectBranchMap projectBranchMap = projectBranchMapService.findByProjectBranchMapId(id);
         if (projectBranchMap == null) {
-            return new ResponseEntity<ProjectBranchMap>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<ProjectBranchMap>(projectBranchMap, HttpStatus.OK);
+        return new ResponseEntity<>(projectBranchMap, HttpStatus.OK);
     }
 
     @PutMapping(value = "/{id}", headers="Accept=application/json")
     public ResponseEntity<String> updateProjectBranchMap(@PathVariable("id") long id,@RequestBody ProjectBranchMap currentProjectBranchMap)
     {
         projectBranchMapService.updateProjectBranchMap(id,currentProjectBranchMap);
-        return new ResponseEntity<String>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @DeleteMapping(value="/{id}", headers ="Accept=application/json")
     public ResponseEntity<ProjectBranchMap> deleteProjectBranchMap(@PathVariable("id") Long id){
         ProjectBranchMap user = projectBranchMapService.findByProjectBranchMapId(id);
         if (user == null) {
-            return new ResponseEntity<ProjectBranchMap>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         projectBranchMapService.deleteProjectBranchMapById(id);
-        return new ResponseEntity<ProjectBranchMap>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
