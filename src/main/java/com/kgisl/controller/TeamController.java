@@ -62,16 +62,16 @@ public class TeamController {
     public ResponseEntity<String> updateTeam(@PathVariable("id") long id,@RequestBody Team currentTeam)
     {
         teamService.updateTeam(id,currentTeam);
-        return new ResponseEntity<String>(HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
     @DeleteMapping(value="/{id}", headers ="Accept=application/json")
     public ResponseEntity<Team> deleteTeam(@PathVariable("id") Long id){
         Team user = teamService.findByTeamId(id);
         if (user == null) {
-            return new ResponseEntity<Team>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         teamService.deleteTeamById(id);
-        return new ResponseEntity<Team>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 }
