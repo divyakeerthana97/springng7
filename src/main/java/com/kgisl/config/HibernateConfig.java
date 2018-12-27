@@ -4,6 +4,7 @@ import java.util.Properties;
 
 import javax.sql.DataSource;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -46,8 +47,7 @@ public class HibernateConfig {
 
     @Bean(name = "transactionManager")
     public PlatformTransactionManager txManager() {
-        return new JpaTransactionManager(
-            getEntityManagerFactoryBean().getObject());
+        return new JpaTransactionManager(getEntityManagerFactoryBean().getObject());
     }
 
     /************* End Spring JPA config details **************/
@@ -71,4 +71,8 @@ public class HibernateConfig {
         return properties;
     }
 
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
+    }
 }

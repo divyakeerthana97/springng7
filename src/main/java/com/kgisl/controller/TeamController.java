@@ -3,8 +3,10 @@ package com.kgisl.controller;
 import java.util.List;
 
 import com.kgisl.entity.Team;
+import com.kgisl.entity.TeamDto;
 import com.kgisl.service.TeamService;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.http.HttpHeaders;
@@ -36,11 +38,15 @@ public class TeamController {
     @Autowired
     private TeamService teamService;
 
+    @Autowired
+    private ModelMapper modelMapper;
+
     @PostMapping(value = "/", headers = "Accept=application/json")
-    public ResponseEntity<Void> createTeam(@RequestBody Team team, UriComponentsBuilder ucBuilder) {
-        teamService.createTeam(team);
+    public ResponseEntity<Void> createTeam(@RequestBody TeamDto teamDto, UriComponentsBuilder ucBuilder) {
+         Team team1 = modelMapper.map(teamDto, Team.class);
+        teamService.createTeam(team1);
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(team.getTeamid()).toUri());
+        headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(teamDto.getTeamid()).toUri());
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 
@@ -73,5 +79,10 @@ public class TeamController {
         }
         teamService.deleteTeamById(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
+    private TeamDto convertToOrderDto(Team team) {
+        TeamDto teamDto = modelMapper.map(team, TeamDto.class);
+        return teamDto;
     }
 }
