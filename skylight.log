@@ -162,3 +162,4 @@ DEBUG localhost-startStop-1 org.jboss.logging - Logging Provider: org.jboss.logg
 DEBUG localhost-startStop-1 org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
 DEBUG localhost-startStop-1 org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
 DEBUG localhost-startStop-1 org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+DEBUG localhost-startStop-1 org.jboss.logging - Logging Provider: org.jboss.logging.Log4jLoggerProvider

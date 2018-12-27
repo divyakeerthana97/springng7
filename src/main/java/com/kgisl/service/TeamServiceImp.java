@@ -26,7 +26,8 @@ public class TeamServiceImp implements TeamService {
     }
 
     public Team findByTeamId(Long id) {
-        return teamRepository.findById(id).get();
+        // String stringValue = value.orElse("default");
+        return teamRepository.findById(id).get().orElse("default");
     }
 
     public Team updateTeam(Long id,Team team) {
