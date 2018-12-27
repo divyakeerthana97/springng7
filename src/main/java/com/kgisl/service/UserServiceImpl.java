@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public User findByUserId(Long id) {
-        return userRepository.findById(id).get();
+        return userRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Not found"));
     }
 
     public User updateUser(Long id,User user) {
