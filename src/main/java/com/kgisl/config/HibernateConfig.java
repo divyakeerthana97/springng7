@@ -41,15 +41,13 @@ public class HibernateConfig {
 
     @Bean
     public JpaVendorAdapter getJpaVendorAdapter() {
-        // JpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
         return new HibernateJpaVendorAdapter();
     }
 
     @Bean(name = "transactionManager")
     public PlatformTransactionManager txManager() {
-        JpaTransactionManager jpaTransactionManager = new JpaTransactionManager(
-                getEntityManagerFactoryBean().getObject());
-        return jpaTransactionManager;
+        return new JpaTransactionManager(
+            getEntityManagerFactoryBean().getObject());
     }
 
     /************* End Spring JPA config details **************/

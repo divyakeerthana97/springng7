@@ -38,8 +38,6 @@ public class ProjectBranchMapServiceImp implements ProjectBranchMapService {
     }
 
     public Object[] getProjectBranchMapsNativeQuery() {
-        System.out.println(projectBranchMapRepository.findAllProjectBranches());
-
         return  projectBranchMapRepository.findAllProjectBranches();
     }
 }
