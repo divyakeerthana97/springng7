@@ -10,6 +10,8 @@ import com.kgisl.repository.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javassist.NotFoundException;
+
 @Service
 @Transactional
 public class TeamServiceImp implements TeamService {
@@ -30,8 +32,7 @@ public class TeamServiceImp implements TeamService {
         //     String stringValue = value.get();
         //   }
         // x=teamRepository.findById(id).get();
-        return teamRepository.findById(id)
-        .orElseThrow(() -> new NotFoundEntity(id));;
+        return teamRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Not found"));
     }
 
     public Team updateTeam(Long id,Team team) {
