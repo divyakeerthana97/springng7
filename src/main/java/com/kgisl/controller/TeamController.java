@@ -65,9 +65,10 @@ public class TeamController {
     }
 
     @PutMapping(value = "/{id}", headers="Accept=application/json")
-    public ResponseEntity<String> updateTeam(@PathVariable("id") long id,@RequestBody Team currentTeam)
+    public ResponseEntity<String> updateTeam(@PathVariable("id") long id,@RequestBody TeamDto currentTeam)
     {
-        teamService.updateTeam(id,currentTeam);
+        Team team1 = modelMapper.map(currentTeam, Team.class);
+        teamService.updateTeam(id,team1);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
