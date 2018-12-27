@@ -39,7 +39,7 @@ public class ProjectController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createProject(@RequestBody Project project, UriComponentsBuilder ucBuilder) {
-        System.out.println("Creating project " + project.getProjectname());
+        // System.out.println("Creating project " + project.getProjectname());
         projectService.createProject(project);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(project.getProjectid()).toUri());
@@ -48,13 +48,13 @@ public class ProjectController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<Project>> all() {
-        System.out.println("GET ALL CALLED");
+        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(projectService.getProjects(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Project> getProjectById(@PathVariable("id") long id) {
-        System.out.println("Fetching Project with id " + id);
+        // System.out.println("Fetching Project with id " + id);
         Project project = projectService.findByProjectId(id);
         if (project == null) {
             return new ResponseEntity<Project>(HttpStatus.NOT_FOUND);

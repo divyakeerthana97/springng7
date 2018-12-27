@@ -39,7 +39,7 @@ public class ProjectBranchMapController {
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createProjectBranchMap(@RequestBody ProjectBranchMap projectBranchMap,
             UriComponentsBuilder ucBuilder) {
-        System.out.println("Creating projectBranchMap " + projectBranchMap.getProjectbranchid());
+        // System.out.println("Creating projectBranchMap " + projectBranchMap.getProjectbranchid());
         projectBranchMapService.createProjectBranchMap(projectBranchMap);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(projectBranchMap.getProjectbranchid()).toUri());
@@ -48,17 +48,17 @@ public class ProjectBranchMapController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<ProjectBranchMap>> all() {
-        System.out.println("GET ALL CALLED");
+        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(projectBranchMapService.getProjectBranchMaps(), HttpStatus.OK);
     }
     @GetMapping("/allnativequery")
     public @ResponseBody ResponseEntity<Object[]> allnativequery() {
-        System.out.println("GET ALL CALLED");
+        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(projectBranchMapService.getProjectBranchMapsNativeQuery(), HttpStatus.OK);
     }
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ProjectBranchMap> getProjectBranchMapById(@PathVariable("id") long id) {
-        System.out.println("Fetching ProjectBranchMap with id " + id);
+        // System.out.println("Fetching ProjectBranchMap with id " + id);
         ProjectBranchMap projectBranchMap = projectBranchMapService.findByProjectBranchMapId(id);
         if (projectBranchMap == null) {
             return new ResponseEntity<ProjectBranchMap>(HttpStatus.NOT_FOUND);

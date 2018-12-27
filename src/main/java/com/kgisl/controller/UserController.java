@@ -39,7 +39,7 @@ public class UserController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createUser(@RequestBody User user, UriComponentsBuilder ucBuilder) {
-        System.out.println("Creating user " + user.getName());
+        // System.out.println("Creating user " + user.getName());
         userService.createUser(user);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(user.getId()).toUri());
@@ -48,13 +48,13 @@ public class UserController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<User>> all() {
-        System.out.println("GET ALL CALLED");
+        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(userService.getUsers(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> getUserById(@PathVariable("id") long id) {
-        System.out.println("Fetching User with id " + id);
+        // System.out.println("Fetching User with id " + id);
         User user = userService.findByUserId(id);
         if (user == null) {
             return new ResponseEntity<User>(HttpStatus.NOT_FOUND);

@@ -39,7 +39,7 @@ public class BranchController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createBranch(@RequestBody Branch branch, UriComponentsBuilder ucBuilder) {
-        System.out.println("Creating branch " + branch.getBranchname());
+        // System.out.println("Creating branch " + branch.getBranchname());
         branchService.createBranch(branch);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(branch.getBranchid()).toUri());
@@ -48,13 +48,13 @@ public class BranchController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<Branch>> all() {
-        System.out.println("GET ALL CALLED");
+        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(branchService.getBranchs(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Branch> getBranchById(@PathVariable("id") long id) {
-        System.out.println("Fetching Branch with id " + id);
+        // System.out.println("Fetching Branch with id " + id);
         Branch branch = branchService.findByBranchId(id);
         if (branch == null) {
             return new ResponseEntity<Branch>(HttpStatus.NOT_FOUND);

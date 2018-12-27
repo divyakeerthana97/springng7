@@ -39,7 +39,7 @@ public class TeamController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createTeam(@RequestBody Team team, UriComponentsBuilder ucBuilder) {
-        System.out.println("Creating team " + team.getTeamname());
+        // System.out.println("Creating team " + team.getTeamname());
         teamService.createTeam(team);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(team.getTeamid()).toUri());
@@ -48,13 +48,13 @@ public class TeamController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<Team>> all() {
-        System.out.println("GET ALL CALLED");
+        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(teamService.getTeams(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Team> getTeamById(@PathVariable("id") long id) {
-        System.out.println("Fetching Team with id " + id);
+        // System.out.println("Fetching Team with id " + id);
         Team team = teamService.findByTeamId(id);
         if (team == null) {
             return new ResponseEntity<Team>(HttpStatus.NOT_FOUND);
