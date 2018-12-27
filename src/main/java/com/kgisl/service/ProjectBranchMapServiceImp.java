@@ -1,7 +1,6 @@
 package com.kgisl.service;
 
 import java.util.List;
-import java.util.Optional;
 
 import javax.transaction.Transactional;
 
@@ -31,7 +30,7 @@ public class ProjectBranchMapServiceImp implements ProjectBranchMapService {
     }
 
     public ProjectBranchMap updateProjectBranchMap(Long id,ProjectBranchMap projectBranchMap) {
-        ProjectBranchMap t = projectBranchMapRepository.getOne(id);
+        // ProjectBranchMap t = projectBranchMapRepository.getOne(id);
         // t.setProjectBranchMapname(projectBranchMap.getProjectBranchMapname());
         return projectBranchMapRepository.save(projectBranchMap);
     }

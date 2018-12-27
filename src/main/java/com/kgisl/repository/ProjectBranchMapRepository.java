@@ -1,8 +1,5 @@
 package com.kgisl.repository;
 
-import java.util.List;
-import java.util.Objects;
-
 import com.kgisl.entity.ProjectBranchMap;
 
 import org.springframework.data.jpa.repository.JpaRepository;
