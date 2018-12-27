@@ -26,7 +26,7 @@ public class BranchServiceImp implements BranchService {
     }
 
     public Branch findByBranchId(Long id) {
-        return branchRepository.findById(id).get();
+        return branchRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Not found"));
     }
 
     public Branch updateBranch(Long id,Branch branch) {

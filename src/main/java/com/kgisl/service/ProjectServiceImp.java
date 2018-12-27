@@ -26,7 +26,7 @@ public class ProjectServiceImp implements ProjectService {
     }
 
     public Project findByProjectId(Long id) {
-        return projectRepository.findById(id).get();
+        return projectRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Not found"));
     }
 
     public Project updateProject(Long id,Project project) {

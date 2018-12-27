@@ -26,7 +26,7 @@ public class ProjectBranchMapServiceImp implements ProjectBranchMapService {
     }
 
     public ProjectBranchMap findByProjectBranchMapId(Long id) {
-        return projectBranchMapRepository.findById(id).get();
+        return projectBranchMapRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Not found"));
     }
 
     public ProjectBranchMap updateProjectBranchMap(Long id,ProjectBranchMap projectBranchMap) {
