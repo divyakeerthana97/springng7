@@ -26,9 +26,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 /**
  * TeamController
  */
-// @CrossOrigin(origins = "*", maxAge = 3600)
+
 @CrossOrigin(origins = "*")
-// @CrossOrigin(origins = "http://localhost:4200/")
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 @RestController
 @RequestMapping("/api/teams")
@@ -39,7 +38,6 @@ public class TeamController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createTeam(@RequestBody Team team, UriComponentsBuilder ucBuilder) {
-        // System.out.println("Creating team " + team.getTeamname());
         teamService.createTeam(team);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(team.getTeamid()).toUri());
@@ -48,13 +46,11 @@ public class TeamController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<Team>> all() {
-        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(teamService.getTeams(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Team> getTeamById(@PathVariable("id") long id) {
-        // System.out.println("Fetching Team with id " + id);
         Team team = teamService.findByTeamId(id);
         if (team == null) {
             return new ResponseEntity<Team>(HttpStatus.NOT_FOUND);
@@ -65,11 +61,6 @@ public class TeamController {
     @PutMapping(value = "/{id}", headers="Accept=application/json")
     public ResponseEntity<String> updateTeam(@PathVariable("id") long id,@RequestBody Team currentTeam)
     {
-        // Team team = teamService.findByTeamId(currentTeam.findByTeamId(id));
-        // if (team==null) {
-        //     return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
-        // }
-        // team.setTeamname(currentTeam.getTeamname());
         teamService.updateTeam(id,currentTeam);
         return new ResponseEntity<String>(HttpStatus.OK);
     }

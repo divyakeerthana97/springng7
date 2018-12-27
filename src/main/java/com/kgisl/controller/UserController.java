@@ -26,9 +26,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 /**
  * UserController
  */
-// @CrossOrigin(origins = "*", maxAge = 3600)
 @CrossOrigin(origins = "*")
-// @CrossOrigin(origins = "http://localhost:4200/")
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 @RestController
 @RequestMapping("/api/users")
@@ -39,7 +37,6 @@ public class UserController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createUser(@RequestBody User user, UriComponentsBuilder ucBuilder) {
-        // System.out.println("Creating user " + user.getName());
         userService.createUser(user);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(user.getId()).toUri());
@@ -48,13 +45,11 @@ public class UserController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<User>> all() {
-        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(userService.getUsers(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<User> getUserById(@PathVariable("id") long id) {
-        // System.out.println("Fetching User with id " + id);
         User user = userService.findByUserId(id);
         if (user == null) {
             return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
@@ -65,11 +60,6 @@ public class UserController {
     @PutMapping(value = "/{id}", headers="Accept=application/json")
     public ResponseEntity<String> updateUser(@PathVariable("id") long id,@RequestBody User currentUser)
     {
-        // User user = userService.findByUserId(currentUser.findByUserId(id));
-        // if (user==null) {
-        //     return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
-        // }
-        // user.setUsername(currentUser.getUsername());
         userService.updateUser(id,currentUser);
         return new ResponseEntity<String>(HttpStatus.OK);
     }

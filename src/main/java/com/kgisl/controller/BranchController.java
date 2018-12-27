@@ -39,7 +39,6 @@ public class BranchController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createBranch(@RequestBody Branch branch, UriComponentsBuilder ucBuilder) {
-        // System.out.println("Creating branch " + branch.getBranchname());
         branchService.createBranch(branch);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(branch.getBranchid()).toUri());
@@ -48,13 +47,11 @@ public class BranchController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<Branch>> all() {
-        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(branchService.getBranchs(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Branch> getBranchById(@PathVariable("id") long id) {
-        // System.out.println("Fetching Branch with id " + id);
         Branch branch = branchService.findByBranchId(id);
         if (branch == null) {
             return new ResponseEntity<Branch>(HttpStatus.NOT_FOUND);
@@ -62,20 +59,14 @@ public class BranchController {
         return new ResponseEntity<Branch>(branch, HttpStatus.OK);
     }
 
-    @PutMapping(value = "/{id}", headers="Accept=application/json")
-    public ResponseEntity<String> updateBranch(@PathVariable("id") long id,@RequestBody Branch currentBranch)
-    {
-        // Branch branch = branchService.findByBranchId(currentBranch.findByBranchId(id));
-        // if (branch==null) {
-        //     return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
-        // }
-        // branch.setBranchname(currentBranch.getBranchname());
-        branchService.updateBranch(id,currentBranch);
+    @PutMapping(value = "/{id}", headers = "Accept=application/json")
+    public ResponseEntity<String> updateBranch(@PathVariable("id") long id, @RequestBody Branch currentBranch) {
+        branchService.updateBranch(id, currentBranch);
         return new ResponseEntity<String>(HttpStatus.OK);
     }
 
-    @DeleteMapping(value="/{id}", headers ="Accept=application/json")
-    public ResponseEntity<Branch> deleteBranch(@PathVariable("id") Long id){
+    @DeleteMapping(value = "/{id}", headers = "Accept=application/json")
+    public ResponseEntity<Branch> deleteBranch(@PathVariable("id") Long id) {
         Branch user = branchService.findByBranchId(id);
         if (user == null) {
             return new ResponseEntity<Branch>(HttpStatus.NOT_FOUND);

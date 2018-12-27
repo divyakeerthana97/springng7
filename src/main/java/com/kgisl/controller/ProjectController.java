@@ -26,9 +26,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 /**
  * ProjectController
  */
-// @CrossOrigin(origins = "*", maxAge = 3600)
+
 @CrossOrigin(origins = "*")
-// @CrossOrigin(origins = "http://localhost:4200/")
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 @RestController
 @RequestMapping("/api/projects")
@@ -39,7 +38,6 @@ public class ProjectController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createProject(@RequestBody Project project, UriComponentsBuilder ucBuilder) {
-        // System.out.println("Creating project " + project.getProjectname());
         projectService.createProject(project);
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(project.getProjectid()).toUri());
@@ -48,13 +46,11 @@ public class ProjectController {
 
     @GetMapping("/")
     public @ResponseBody ResponseEntity<List<Project>> all() {
-        // System.out.println("GET ALL CALLED");
         return new ResponseEntity<>(projectService.getProjects(), HttpStatus.OK);
     }
 
     @GetMapping(value = "/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Project> getProjectById(@PathVariable("id") long id) {
-        // System.out.println("Fetching Project with id " + id);
         Project project = projectService.findByProjectId(id);
         if (project == null) {
             return new ResponseEntity<Project>(HttpStatus.NOT_FOUND);
@@ -65,11 +61,6 @@ public class ProjectController {
     @PutMapping(value = "/{id}", headers="Accept=application/json")
     public ResponseEntity<String> updateProject(@PathVariable("id") long id,@RequestBody Project currentProject)
     {
-        // Project project = projectService.findByProjectId(currentProject.findByProjectId(id));
-        // if (project==null) {
-        //     return new ResponseEntity<String>(HttpStatus.NOT_FOUND);
-        // }
-        // project.setProjectname(currentProject.getProjectname());
         projectService.updateProject(id,currentProject);
         return new ResponseEntity<String>(HttpStatus.OK);
     }
