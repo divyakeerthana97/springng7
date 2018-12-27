@@ -53,9 +53,9 @@ public class TeamController {
     public ResponseEntity<Team> getTeamById(@PathVariable("id") long id) {
         Team team = teamService.findByTeamId(id);
         if (team == null) {
-            return new ResponseEntity<Team>(HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<Team>(team, HttpStatus.OK);
+        return new ResponseEntity<>(team, HttpStatus.OK);
     }
 
     @PutMapping(value = "/{id}", headers="Accept=application/json")
