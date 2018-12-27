@@ -22,7 +22,7 @@ public class BranchServiceImp implements BranchService {
     }
 
     public List<Branch> getBranchs() {
-        return (List<Branch>) branchRepository.findAll();
+        return branchRepository.findAll();
     }
 
     public Branch findByBranchId(Long id) {
@@ -38,5 +38,4 @@ public class BranchServiceImp implements BranchService {
     public void deleteBranchById(Long id) {
         branchRepository.deleteById(id);
     }
-
 }

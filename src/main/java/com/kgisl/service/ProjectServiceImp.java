@@ -22,7 +22,7 @@ public class ProjectServiceImp implements ProjectService {
     }
 
     public List<Project> getProjects() {
-        return (List<Project>) projectRepository.findAll();
+        return projectRepository.findAll();
     }
 
     public Project findByProjectId(Long id) {

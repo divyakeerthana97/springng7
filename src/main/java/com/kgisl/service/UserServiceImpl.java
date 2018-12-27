@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
     }
 
     public List<User> getUsers() {
-        return (List<User>) userRepository.findAll();
+        return userRepository.findAll();
     }
 
     public User findByUserId(Long id) {

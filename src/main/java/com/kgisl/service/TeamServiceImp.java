@@ -22,14 +22,10 @@ public class TeamServiceImp implements TeamService {
     }
 
     public List<Team> getTeams() {
-        return (List<Team>) teamRepository.findAll();
+        return teamRepository.findAll();
     }
 
     public Team findByTeamId(Long id) {
-        // if (value.isPresent()) {
-        //     String stringValue = value.get();
-        //   }
-        // x=teamRepository.findById(id).get();
         return teamRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Not found"));
     }
 

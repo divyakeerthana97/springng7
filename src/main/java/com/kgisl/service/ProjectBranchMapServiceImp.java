@@ -22,7 +22,7 @@ public class ProjectBranchMapServiceImp implements ProjectBranchMapService {
     }
 
     public List<ProjectBranchMap> getProjectBranchMaps() {
-        return (List<ProjectBranchMap>) projectBranchMapRepository.findAll();
+        return projectBranchMapRepository.findAll();
     }
 
     public ProjectBranchMap findByProjectBranchMapId(Long id) {
@@ -30,8 +30,6 @@ public class ProjectBranchMapServiceImp implements ProjectBranchMapService {
     }
 
     public ProjectBranchMap updateProjectBranchMap(Long id,ProjectBranchMap projectBranchMap) {
-        // ProjectBranchMap t = projectBranchMapRepository.getOne(id);
-        // t.setProjectBranchMapname(projectBranchMap.getProjectBranchMapname());
         return projectBranchMapRepository.save(projectBranchMap);
     }
 
