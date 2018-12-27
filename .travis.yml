@@ -2,10 +2,10 @@ sudo: required
 language: java
 jdk: oraclejdk8
 
-  addons:
-  sonarcloud:
+addons: 
+  sonarcloud: 
     organization: divyakeerthana97-github
-    token:
+    token: 
       secure: f2c90a23b2d271fc050c347f4b7f63d858b4c411
 
 before_install:
