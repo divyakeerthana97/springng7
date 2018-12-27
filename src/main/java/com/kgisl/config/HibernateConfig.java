@@ -41,8 +41,8 @@ public class HibernateConfig {
 
     @Bean
     public JpaVendorAdapter getJpaVendorAdapter() {
-        JpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
-        return adapter;
+        // JpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
+        return new HibernateJpaVendorAdapter();
     }
 
     @Bean(name = "transactionManager")
