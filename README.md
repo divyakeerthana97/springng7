@@ -1,1 +1,1 @@
-travis status
+travis
