@@ -82,8 +82,5 @@ public class TeamController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
-    private TeamDto convertToOrderDto(Team team) {
-        TeamDto teamDto = modelMapper.map(team, TeamDto.class);
-        return teamDto;
-    }
+    
 }
