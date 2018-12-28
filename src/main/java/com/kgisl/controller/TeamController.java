@@ -43,8 +43,7 @@ public class TeamController {
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createTeam(@RequestBody TeamDto teamDto, UriComponentsBuilder ucBuilder) {
-         Team team1 = modelMapper.map(teamDto, Team.class);
-        teamService.createTeam(team1);
+        teamService.createTeam(modelMapper.map(teamDto, Team.class));
         HttpHeaders headers = new HttpHeaders();
         headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(teamDto.getTeamid()).toUri());
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
@@ -67,8 +66,7 @@ public class TeamController {
     @PutMapping(value = "/{id}", headers="Accept=application/json")
     public ResponseEntity<String> updateTeam(@PathVariable("id") long id,@RequestBody TeamDto currentTeam)
     {
-        Team team1 = modelMapper.map(currentTeam, Team.class);
-        teamService.updateTeam(id,team1);
+        teamService.updateTeam(id,modelMapper.map(currentTeam, Team.class));
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
