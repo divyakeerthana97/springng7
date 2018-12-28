@@ -3,8 +3,10 @@ package com.kgisl.controller;
 import java.util.List;
 
 import com.kgisl.entity.Branch;
+import com.kgisl.entity.BranchDto;
 import com.kgisl.service.BranchService;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.http.HttpHeaders;
@@ -26,9 +28,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 /**
  * BranchController
  */
-// @CrossOrigin(origins = "*", maxAge = 3600)
 @CrossOrigin(origins = "*")
-// @CrossOrigin(origins = "http://localhost:4200/")
+
 @EnableAspectJAutoProxy(proxyTargetClass = true)
 @RestController
 @RequestMapping("/api/branches")
@@ -36,6 +37,9 @@ public class BranchController {
 
     @Autowired
     private BranchService branchService;
+
+    @Autowired
+    private ModelMapper modelMapper;
 
     @PostMapping(value = "/", headers = "Accept=application/json")
     public ResponseEntity<Void> createBranch(@RequestBody Branch branch, UriComponentsBuilder ucBuilder) {
@@ -73,5 +77,10 @@ public class BranchController {
         }
         branchService.deleteBranchById(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+    private BranchDto convertToOrderDto(Branch branch) {
+        
+        BranchDto branchDto = modelMapper.map(branch, BranchDto.class);
+        return branchDto;
     }
 }
