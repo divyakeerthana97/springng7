@@ -42,10 +42,10 @@ public class BranchController {
     private ModelMapper modelMapper;
 
     @PostMapping(value = "/", headers = "Accept=application/json")
-    public ResponseEntity<Void> createBranch(@RequestBody Branch branch, UriComponentsBuilder ucBuilder) {
-        branchService.createBranch(branch);
+    public ResponseEntity<Void> createBranch(@RequestBody BranchDto branchDto, UriComponentsBuilder ucBuilder) {
+        branchService.createBranch(modelMapper.map(branchDto, Branch.class));
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(branch.getBranchid()).toUri());
+        headers.setLocation(ucBuilder.path("/{id}").buildAndExpand(branchDto.getBranchid()).toUri());
         return new ResponseEntity<>(headers, HttpStatus.CREATED);
     }
 
@@ -65,7 +65,7 @@ public class BranchController {
 
     @PutMapping(value = "/{id}", headers = "Accept=application/json")
     public ResponseEntity<String> updateBranch(@PathVariable("id") long id, @RequestBody Branch currentBranch) {
-        branchService.updateBranch(id, currentBranch);
+        branchService.updateBranch(id,modelMapper.map(currentBranch, Branch.class));
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
@@ -78,9 +78,5 @@ public class BranchController {
         branchService.deleteBranchById(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-    private BranchDto convertToOrderDto(Branch branch) {
-        
-        BranchDto branchDto = modelMapper.map(branch, BranchDto.class);
-        return branchDto;
-    }
+    
 }
